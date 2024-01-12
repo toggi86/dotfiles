@@ -1,3 +1,8 @@
+plugins=(
+  git
+  docker
+  fzf-zsh-plugin
+)
 # Use powerline
 USE_POWERLINE="true"
 # Has weird character width
@@ -12,11 +17,7 @@ fi
 if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
-plugins=(
-  git
-  fzf-zsh-plugin
-)
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 alias dotfiles=/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME
-
+source $ZSH/oh-my-zsh.sh

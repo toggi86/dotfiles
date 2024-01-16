@@ -1,0 +1,5 @@
+#! /bin/bash
+
+swaymsg [workspace=2] move workspace to output DP-1
+swaymsg [workspace=1] move workspace to output DP-1
+swaymsg [workspace=3] move workspace to output DP-1
